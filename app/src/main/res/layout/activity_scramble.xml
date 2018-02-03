@@ -6,13 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.example.jonathan.scramble.scramble">
 
+    <Button
+        android:id="@+id/btnScramble"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="177dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="116dp"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
+        android:id="@+id/lblTekst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="247dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="245dp"
+        android:text="@string/textview"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginTop="232dp"
+        android:labelFor="@+id/txtWord"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnScramble"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
